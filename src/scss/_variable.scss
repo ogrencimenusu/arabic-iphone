@@ -1,0 +1,27 @@
+/*  Renkler  */
+
+$colors:(
+        ilk:gray,
+        ikinci:blue,
+        uc:white,
+);
+@function renk($color-name){
+  @return map-get($colors, $color-name);
+}
+
+
+
+/*  Uyumluluk  */
+
+@mixin masaustu{
+  @media(min-width:#{$desktop}){
+    @content;
+  }
+}
+@mixin mobil{
+  @media(max-width:#{$mobil}){
+    @content;
+  }
+}
+$desktop:1200px;
+$mobil:567px;

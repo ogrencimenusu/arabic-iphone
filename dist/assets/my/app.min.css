@@ -1,0 +1,1 @@
+@import url(../fonts/opensans/font.css);body{font-family:'Open Sans Regular',sans-serif;background:#fff}body b{-webkit-transform:rotate(45deg);transform:rotate(45deg);display:flex}@media (min-width:1200px){body b{width:800px;margin:auto;background:#fff;display:block}}@media (max-width:567px){body b{width:100px;background:#00f}}
