@@ -32,6 +32,27 @@ header{
   @include extra-small{
     background: lightblue;
   }
-
+}
+footer{
+  .footer-menu{
+    background: color(bg-footer);
+  }
+  .copyright-wrap{
+    background: color(bg-copyright);
+    .menu{
+      ul{
+        li{
+          list-style-type: none;
+          float: left;
+          a{
+            display: block;
+          }
+        }
+      }
+    }
+    .copyright{
+      text-align: right;
+    }
+  }
 }
 
