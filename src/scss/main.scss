@@ -6,35 +6,32 @@ body{
   font-family: 'Open Sans Regular', sans-serif;
 }
 
-@mixin masaustu{
-  @media(min-width:#{$desktop}){
-    @content;
-  }
-}
-@mixin mobil{
-  @media(max-width:#{$mobil}){
-    @content;
-  }
-}
+
 body{
-  background:renk(uc);
+  background:color(bg-product );
   b{
     transform: rotate(45deg);
     display: flex;
-    @include masaustu{
-      width: 800px;
-      margin: auto;
-      background: renk(uc);
-      display: block;
-    }
-    @include mobil(){
-      width: 100px;
-      background: renk(ikinci);
-
-    }
   }
 }
+header{
+  background: color(siyah);
+}
+.ktu{
+  background: orange;
 
-@media (min-width: 576px) { }
-@media (min-width: 768px) { }
-@media (min-width: 992px) { }
+  @include large{
+    background: yellow;
+  }
+  @include medium{
+    background: cyan;
+  }
+  @include small{
+    background: blue;
+  }
+  @include extra-small{
+    background: lightblue;
+  }
+
+}
+
