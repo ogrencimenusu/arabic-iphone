@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'AF_Najed';
+    src: url('AF_Najed-NormalTraditional.woff2') format('woff2'),
+        url('AF_Najed-NormalTraditional.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
